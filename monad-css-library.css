@@ -1,0 +1,194 @@
+:root {
+    --monad-purple: #836EF9;
+    --monad-dark-blue: #200052;
+    --electric-ice: #5FEDDF;
+    --berry: #A0055D;
+    --wine: #61004F;
+    --purple-light-25: #BBAFFF;
+    --purple-light-50: #9E8CFF;
+    --purple-dark-25: #632ADB;
+    --purple-dark-50: #3C1B84;
+    --blue-light-25:#9F90F9;
+    --blue-light-50:#8975FF;
+    --blue-dark-25:#563AFD;
+    --blue-dark-50:#1A0E62;
+    --black:#000000;
+    --black-80:#232323;
+    --black-60:#4D4D4D;
+    --black-40:#7A7A7A;
+    --white:#ffffff;
+    --white-80:#F1F1F1;
+    --white-60:#E2E2E2;
+    --white-40:#D6D6D6;
+    --gray:#1F2937;
+    --gray-80:#374151;
+    --gray-60:#4B5563;
+    --gray-40:#6B7280;
+    --info: #A0C3FF;
+    --success: #2CA77B;
+    --warning: #FBC756;
+    --error: #F60F0F;
+    --gradient-start: #2b1d8d;  
+    --gradient-middle: #743f97; 
+    --gradient-end: #d85a9e;   
+    --gradient-color-1: rgba(166, 213, 255, 0.8); 
+    --gradient-color-2: rgba(162, 133, 255, 0.7); 
+    --gradient-color-3: rgba(255, 202, 115, 0.8); 
+    --gradient-color-4: rgba(255, 161, 120, 0.7); 
+    --gradient-background: #ececec; 
+}
+
+
+@font-face {
+    font-family: 'Inter';
+    src: url('/fonts/Inter-VariableFont_opsz,wght.ttf') format('truetype');
+    font-weight: 100 900; 
+    font-style: normal;
+}
+      
+@font-face {
+    font-family: 'Inter';
+    src: url('/fonts/Inter-Italic-VariableFont_opsz,wght.ttf') format('truetype');
+    font-weight: 100 900; 
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Ubuntu';
+    src: url('../assets/fonts/Ubuntu-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Ubuntu';
+    src: url('../assets/fonts/Ubuntu-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+.text-ubuntu-bold {
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  .text-ubuntu-regular {
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  .text-inter-light {
+    font-family: Inter;
+    font-weight: 300;
+}
+
+.text-inter-regular {
+    font-family: Inter;
+    font-weight: 400;
+}
+
+.text-inter-medium {
+    font-family: Inter;
+    font-weight: 500;
+}
+
+.text-inter-bold {
+    font-family: Inter;
+    font-weight: 700;
+}
+
+.text-inter-italic-light {
+    font-family: Inter;
+    font-style: italic;
+    font-weight: 300;
+}
+
+.text-inter-italic-regular {
+    font-family: Inter;
+    font-style: italic;
+    font-weight: 400;
+}
+
+.text-inter-italic-medium {
+    font-family: Inter;
+    font-style: italic;
+    font-weight: 500;
+}
+
+.text-inter-italic-bold {
+    font-family: Inter;
+    font-style: italic;
+    font-weight: 700;
+}
+
+
+
+
+.bg-monad-2 {
+    background: --gradient-background;
+    background: radial-gradient(circle at 20% 40%, --gradient-color-1 20%, transparent 50%),
+                radial-gradient(circle at 50% 50%, --gradient-color-2 20%, transparent 60%),
+                radial-gradient(circle at 70% 60%, --gradient-color-3 20%, transparent 60%),
+                radial-gradient(circle at 90% 70%, --gradient-color-4 30%, transparent 70%);
+  }
+  
+  .bg-monad-1 {
+    background: linear-gradient(135deg, --gradient-start, --gradient-middle, --gradient-end);
+  }
+
+  .text-monad-purple {
+    color:--monad-purple;
+}
+
+.text-monad-dark-blue {
+    color:--monad-dark-blue;
+}
+
+.text-electric-ice {
+    color: --electric-ice
+}
+
+.text-berry{
+    color: --berry;
+}
+
+.text-wine {
+    color: --wine;
+}
+
+.text-purple-light-25 {
+    color: --purple-light-25;
+}
+
+.text-purple-light-50 {
+    color: --purple-light-50;
+}
+
+.text-purple-dark-25 {
+    color: --purple-dark-25;
+}
+
+.text-purple-dark-50 {
+    color: --purple-dark-50;
+}
+
+.gradient-text {
+    font-family: Arial, sans-serif;
+    font-size: 80px;
+    font-weight: bold;
+    background: linear-gradient(90deg, #BBAFFF, #A0055D); 
+    -webkit-background-clip: text; 
+    -webkit-text-fill-color: transparent; 
+    text-transform: capitalize;
+  }
+
+  .fixed-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #1B1B1F;
+    z-index: 1030; 
+  }
