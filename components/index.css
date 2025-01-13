@@ -1,0 +1,73 @@
+.banner-container {
+  width: 1200px;
+  height: 360px;
+  box-sizing: border-box;
+  padding: 40px 48px 40px 72px;
+  border-radius: 24px;
+  border: 1px solid var(--white-40);
+  background-color: var(--white-90);
+  cursor: pointer;
+  transition: all .25s;
+  overflow: hidden;
+  position: relative;
+  box-shadow: 0px 1px 1px 0px rgba(20, 21, 26, 0.15);
+}
+.banner-container:hover {
+  background-color: var(--white);
+}
+.banner-container:hover .blog-logo {
+  right: -100px;
+}
+.banner-container .green-circle {
+  width: 24px;
+  height: 24px;
+  background-color: var(--success);
+  border-radius: 50%;
+  position: absolute;
+}
+.banner-container .intro {
+  max-width: 18ch;
+  -webkit-line-clamp: 2;
+  font-size: var(--h5--font-size);
+  margin-left: 40px;
+  margin-top: -10px;
+}
+.banner-container .blog-logo {
+  width: 494px;
+  height: 496px;
+  position: absolute;
+  top: 30px;
+  right: -200px;
+  transition: all .35s ease-in-out;
+  /* transform: translateX(-100px); */
+}
+.date {
+  font-size: .75rem;
+  color: rgb(153, 151, 151);
+  margin-left: 40px;
+  position: absolute;
+  bottom: 40px;
+}
+@media only screen and (max-width: 991px) {
+  .blog-logo {
+    width: 370.5px;
+    height: 372px;
+  }
+  .banner-container {
+    width: 800px;
+    height: 240px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .blog-logo {
+    width: 247px;
+    height: 248px;
+  }
+}
+@media only screen and (max-width: 439px) {
+  .blog-logo {
+    width: 247px;
+    height: 248px;
+    display: none;
+  }
+}
