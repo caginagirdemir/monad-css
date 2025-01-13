@@ -37,7 +37,8 @@
     --gradient-color-3: rgba(255, 202, 115, 0.8); 
     --gradient-color-4: rgba(255, 161, 120, 0.7); 
     --gradient-background: #ececec; 
-
+    
+    --shadow-electric-ice: #95D9D2;
     --h5--font-size: 1.875rem;
 }
 

@@ -48,6 +48,63 @@
   position: absolute;
   bottom: 40px;
 }
+
+img {
+  position: absolute;
+  margin-left: 6px;
+  z-index: 99;
+  transition: all .3s;
+  cursor: pointer;
+}
+input[type="checkbox"] {
+  position: relative;
+  width: 120px;
+  height: 30px;
+  appearance: none;
+  background-color: var(--monad-purple);
+  border-radius: 15px;
+  outline: none;
+  transition: background-color 0.3s;
+}
+input[type="checkbox"]:checked {
+  background-color: var(--gray-40);
+}
+input[type="checkbox"]::before {
+  /* content: url('../logos/primary/logo.png'); */
+  content: '';
+  position: absolute;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  top: -10px;
+  left: 0px;
+  background-color: var(--electric-ice);
+  transition: transform 0.3s;
+}
+input[type="checkbox"]:checked::before {
+  transform: translateX(80px);
+  background-color: var(--shadow-electric-ice);
+}
+input[type="checkbox"]:checked + img {
+  transform: translateX(80px);
+}
+/* 
+input[type="checkbox"]::after {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 16px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+input[type="checkbox"]:checked::after {
+  opacity: 1;
+} */
+
 @media only screen and (max-width: 991px) {
   .blog-logo {
     width: 370.5px;
